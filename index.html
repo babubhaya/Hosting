@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>host</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script> 
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" >
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+</head> -->
+<style>
+
+  .d-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .buttons{
+    width: 130px;
+    height: 53px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    background: #186DC9;
+    transition: scale(1.2);
+    border-radius: 9px;
+    zoom: scale(1.1);
+   }
+   #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+
+@media screen and (min-width:1000px) {
+.d-grid{
+grid-template-columns: repeat(3, 1fr);
+}
+.container .feature__item:last-child {
+ justify-self: center;
+ grid-column-start:span 3;
+}
+}
+@media screen and (max-width:990px) {
+	.d-grid{
+	grid-template-columns: repeat(2, 1fr);
+	}
+  .container .feature__item:last-child {
+ justify-self: center;
+ grid-column-start:span 2;
+}
+	}
+	@media screen and (max-width:770px) {
+		.d-grid{
+		grid-template-columns: repeat(1, 1fr);
+		}
+    .container .feature__item:last-child {
+ justify-self: center;
+ grid-column-start:span 1;
+}
+		}
+</style>
+<body >
+    <!-- Header Section -->
+<section class="container" id="home">	
+	<div class="navigation-wrap back-light start-header start-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<a class="" href="index.html" target="_blank" ><img src="images/white-logo.png" alt="" style="width: 110px; height: 30px;"></a>		
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+									<a class="nav-link "  href="#home" role="button" aria-haspopup="true" aria-expanded="false">Home</a>	
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="services.html">Hosting</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="domain.html">Domain</a>
+								</li>
+                <li class="nav-item dropdown pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link  " data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-items" href="apps.html" style="color: white!important;">Website Builder</a>
+                      <a class="dropdown-items" href="marketing.html" style="color: white!important;">Digital Marketing</a>
+                      <a class="dropdown-items" href="seo.html" style="color: white!important;">SEO </a>
+                      <a class="dropdown-items" href="graphic.html" style="color: white!important;">Graphic Designing</a>
+                      <a class="dropdown-items" href="shopify.html" style="color: white!important;">Shopify</a>
+                    </div>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="about.html">About US</a>
+								</li>
+								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+									<a class="nav-link" href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</div>	
+					</nav>	  
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class=" full-height">
+		<div class="absolute-center">
+			<div class="section">
+                <div class="textt">
+                    <h2 style="color: #D8692E!important;"><u style="border-bottom:3px solid #186DC9!important;"> Ultrafast </u> Hosting That Has It All</h2>
+                    <div class="d-flex" style="gap: 10px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="color: #D8692E; margin-top: 7px;" fill="currentColor" class="bi bi-check" viewBox="0 0 12 12">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg>
+                      <p class="p-white">Powerful platform recommended by WordPress.org and  <br> trusted by the owners of over millions domains.</p>
+                    </div>
+                      <div class="d-flex" style="gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="color: #D8692E; margin-top: 7px;" fill="currentColor" class="bi bi-check" viewBox="0 0 12 12">
+                          <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                        </svg>
+                      <p class="p-white"> Free domain, email, SSL, CDN and Backups</p></div>
+                    <div class="d-flex" style="gap: 10px;"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="color: #D8692E; margin-top: 7px;" fill="currentColor" class="bi bi-check" viewBox="0 0 12 12">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg>
+                      <p class="p-white">30-day money back guarantee</p></div>
+                   
+                   <div class="d-flex p-white" style="gap: 10px;">  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="color: #D8692E; margin-top: 7px;" fill="currentColor" class="bi bi-check" viewBox="0 0 12 12">
+                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                    <p class="p-white"> Top-rated 24/7 support</p></div>
+                    <br><br>
+                    <a class="anchor" href="#viewplans" style="color: white;"> <button class="elementor-button-text buttons">View Plans</button></a>
+                </div>
+				<div style="margin-bottom: 2.5rem;">
+          <video autoplay muted loop id="myVideo">
+            <source src="videos/video.mp4" type="video/mp4">
+          </video>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Our Services -->
+
+<section>
+
+</section>
+
+<section class="feature-section spad">
+  <div class="container">
+    <h2 class="text-center"><u>Our</u>  Services</h2>
+  <div class=" d-grid" style="    padding: 20px; gap: 20px;">
+    <div class="feature__item ">
+        <a href="domain.html " >
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: var(--card3-gradient-color1);" fill="currentColor" class="bi bi-cloud-fog2-fill" viewBox="0 0 16 16">
+              <path d="M8.5 3a5.001 5.001 0 0 1 4.905 4.027A3 3 0 0 1 13 13h-1.5a.5.5 0 0 0 0-1H1.05a3.51 3.51 0 0 1-.713-1H9.5a.5.5 0 0 0 0-1H.035a3.53 3.53 0 0 1 0-1H7.5a.5.5 0 0 0 0-1H.337a3.5 3.5 0 0 1 3.57-1.977A5.001 5.001 0 0 1 8.5 3z"/>
+            </svg>
+          <h5>Domain</h5>
+          <p>We know getting stuck can be terrible. So, to help you out, and to keep your site running smoothly, we’re offering hassle-free domain name transfer without any charges at all.</p>
+        </a>
+    </div>
+    <div class="feature__item ">
+          <a href="services.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: var(--card3-gradient-color1);" fill="currentColor" class="bi bi-database-fill-add" viewBox="0 0 16 16">
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0ZM8 1c-1.573 0-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4s.875 1.755 1.904 2.223C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777C13.125 5.755 14 5.007 14 4s-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1Z"/>
+              <path d="M2 7v-.839c.457.432 1.004.751 1.49.972C4.722 7.693 6.318 8 8 8s3.278-.307 4.51-.867c.486-.22 1.033-.54 1.49-.972V7c0 .424-.155.802-.411 1.133a4.51 4.51 0 0 0-4.815 1.843A12.31 12.31 0 0 1 8 10c-1.573 0-3.022-.289-4.096-.777C2.875 8.755 2 8.007 2 7Zm6.257 3.998L8 11c-1.682 0-3.278-.307-4.51-.867-.486-.22-1.033-.54-1.49-.972V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13h.027a4.552 4.552 0 0 1 .23-2.002Zm-.002 3L8 14c-1.682 0-3.278-.307-4.51-.867-.486-.22-1.033-.54-1.49-.972V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.507 4.507 0 0 1-1.3-1.905Z"/>
+            </svg>
+            <h5>Hosting</h5>
+            <p>With Dcodax Shared Hosting you get all the features, tools, and guidance you need to build and launch truly impressive WordPress websites. Dcodax supports multiples websites worldwide. Let our experts help you effectively build, grow and manage your website.</p>
+          </a>
+    </div>
+    <div class="feature__item ">
+          <a href="seo.html">    
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: var(--card3-gradient-color1);" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <h5>SEO</h5>
+            <p>We can optimize your site for giant search engines like Google and help you rank higher on Search Engine Result Pages for increased web traffic, higher conversions, boosted sales, and maximized revenue generation.</p>
+          </a>
+    </div>
+    <div class="feature__item ">
+        <a href="apps.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: var(--card3-gradient-color1);" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
+            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
+            <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
+          </svg>
+            <h5>WordPress & WooCommerce</h5>
+            <p>Our ecommerce web development packages are quite affordable. Which means, we can actually help you in making more sales online and generating higher revenue without you having to pay a fortune.</p>
+          </a> 
+    </div>
+    <div class="feature__item ">
+        <a href="shopify.html"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: var(--card3-gradient-color1);" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+          </svg>
+          <h5>Shopify Development</h5>
+          <p>Dcodax has helped clients achieve their business goals by building a robust eCommerce presence and growing their brand. We offer comprehensive Shopify Development Services in a range of solutions designed to deliver ease of use, efficiency, high performance, security, and revenue. </p>
+        </a>
+    </div>
+    <div class="feature__item">
+        <a href="apps.html">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: var(--card3-gradient-color1);" fill="currentColor" class="bi bi-xbox" viewBox="0 0 16 16">
+                <path d="M7.202 15.967a7.987 7.987 0 0 1-3.552-1.26c-.898-.585-1.101-.826-1.101-1.306 0-.965 1.062-2.656 2.879-4.583C6.459 7.723 7.897 6.44 8.052 6.475c.302.068 2.718 2.423 3.622 3.531 1.43 1.753 2.088 3.189 1.754 3.829-.254.486-1.83 1.437-2.987 1.802-.954.301-2.207.429-3.239.33Zm-5.866-3.57C.589 11.253.212 10.127.03 8.497c-.06-.539-.038-.846.137-1.95.218-1.377 1.002-2.97 1.945-3.95.401-.417.437-.427.926-.263.595.2 1.23.638 2.213 1.528l.574.519-.313.385C4.056 6.553 2.52 9.086 1.94 10.653c-.315.852-.442 1.707-.306 2.063.091.24.007.15-.3-.319Zm13.101.195c.074-.36-.019-1.02-.238-1.687-.473-1.443-2.055-4.128-3.508-5.953l-.457-.575.494-.454c.646-.593 1.095-.948 1.58-1.25.381-.237.927-.448 1.161-.448.145 0 .654.528 1.065 1.104a8.372 8.372 0 0 1 1.343 3.102c.153.728.166 2.286.024 3.012a9.495 9.495 0 0 1-.6 1.893c-.179.393-.624 1.156-.82 1.404-.1.128-.1.127-.043-.148ZM7.335 1.952c-.67-.34-1.704-.705-2.276-.803a4.171 4.171 0 0 0-.759-.043c-.471.024-.45 0 .306-.358A7.778 7.778 0 0 1 6.47.128c.8-.169 2.306-.17 3.094-.005.85.18 1.853.552 2.418.9l.168.103-.385-.02c-.766-.038-1.88.27-3.078.853-.361.176-.676.316-.699.312a12.246 12.246 0 0 1-.654-.319Z"/>
+              </svg>
+            <h5>Web & App Development</h5>
+            <p>So, if you want to take your business in the digital world, buy the best of our application and website development packagesand make your business grow exponentially! The applications and websites that we develop are all social media integrated and SEO friendly. </p>
+          </a>
+    </div>
+      <div class="feature__item ">
+          <a href="graphic.html"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color: var(--card3-gradient-color1);"  fill="currentColor" class="bi bi-bezier" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+              <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/>
+            </svg>
+              <h5>Graphic Designing</h5>
+              <p>There's no limit to what you can get designed at Dcodax. Whether you're looking for a spectacular new logo or some stunning flyers, the talented global community of designers at Dcodax can make it happen. Dcodax prides itself on it's high quality designers who deliver only the best graphic design services</p>
+            </a> 
+      </div>
+  </div>
+</div>
+</section>
+
+
+
+<section>
+  <div class="container" style="padding: 35px 0px 0px 0px;">
+      <h2 class="text-center">Why you <u> Choose </u> Us?</h2>
+      <div class="row" style="padding: 25px 0px 0px 0px;">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="d-flex" style="gap: 10px;">
+                 <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: #D8692E; margin-top: 6px; " fill="currentColor" class="bi bi-patch-check" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
+                  </svg>
+                  </div>
+                  <div style="margin-top: 5px;">
+                  <h5 class="font-weight-bold">Certified Experts</h5>
+                  <p>That’s our average customer rating from 37,526 reviews. Happy designers = happy customers.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="d-flex" style="gap: 10px;">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: #D8692E; margin-top: 6px; " fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                      <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                  <h5>Advanced Tools</h5>
+                  <p>Professional graphic designers available worldwide from Frankfurt to Frankston.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="d-flex" style="gap: 10px;">
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: #D8692E; margin-top: 6px; " fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                    </svg>
+                  </div>
+                  <div style="margin-top: 7px;">
+                  <h5>Trusted Clients</h5>
+                  <p>Work with award winning designers and get a design you'll love.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="d-flex" style="gap: 10px;">
+                  <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: #D8692E; margin-top: 6px; " fill="currentColor" class="bi bi-sign-turn-right-fill" viewBox="0 0 16 16">
+                          <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435ZM9 8.466V7H7.5A1.5 1.5 0 0 0 6 8.5V11H5V8.5A2.5 2.5 0 0 1 7.5 6H9V4.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L9.41 8.658A.25.25 0 0 1 9 8.466Z"/>
+                        </svg>
+                  </div>
+                  <div>
+                  <h5> 90+ design categories</h5>
+                  <p>Our talented community can design everything from an iOS app to a wine label.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Our Plains -->
+
+<section id="viewplans">
+<div class="container">
+    <div class="row text-center" style="padding: 30px;">
+        <div class="col-sm-12 col-md-12 col-lg-12"> <h2 style="text-align: center;"><u> View </u> Plans</h2></div>
+    </div>
+
+    
+</div>
+</section>
+
+<section>
+  <div class="container">
+  <div class="snip1255 text-center">
+    <div class="plan">
+        <header>
+          <h4 class="plan-title">
+            Starter
+          </h4><i class="ion-ios-navigate-outline icon" ></i>
+          <div class="plan-cost"><span class="plan-price">$19</span><span class="plan-type">/month</span></div>
+        </header>
+        <ul class="plan-features">
+          <li>5GB Linux Web Space
+          </li>
+          <li>5 MySQL Databases
+          </li>
+          <li>Unlimited Email
+          </li>
+          <li>250Gb mo Transfer
+          </li>
+          <li>24/7 Tech Support
+          </li>
+          <li>Daily Backups
+          </li>
+        </ul>
+        <div class="plan-select"><a href="">Select Plan</a></div>
+      </div>
+      <div class="plan">
+        <header>
+          <h4 class="plan-title">
+            Basic
+          </h4><i class="ion-ios-world icon"></i>
+          <div class="plan-cost"><span class="plan-price">$29</span><span class="plan-type">/month</span></div>
+        </header>
+        <ul class="plan-features">
+          <li>10GB Linux Web Space
+          </li>
+          <li>10 MySQL Databases
+          </li>
+          <li>Unlimited Email
+          </li>
+          <li>500Gb mo Transfer
+          </li>
+          <li>24/7 Tech Support
+          </li>
+          <li>Daily Backups
+          </li>
+        </ul>
+        <div class="plan-select"><a href="">Select Plan</a></div>
+      </div>
+      <div class="plan featured">
+        <header>
+          <h4 class="plan-title">
+            Professional
+          </h4><i class="ion-ios-people icon"></i>
+          <div class="plan-cost"><span class="plan-price">$49</span><span class="plan-type">/month</span></div>
+        </header>
+        <ul class="plan-features">
+          <li>25GB Linux Web Space
+          </li>
+          <li>25 MySQL Databases
+          </li>
+          <li>Unlimited Email
+          </li>
+          <li>2000Gb mo Transfer
+          </li>
+          <li>24/7 Tech Support
+          </li>
+          <li>Daily Backups
+          </li>
+        </ul>
+        <div class="plan-select"><a href="">Select Plan</a></div>
+      </div>
+      <div class="plan">
+        <header>
+          <h4 class="plan-title">
+            Ultra
+          </h4><i class="ion-ios-speedometer icon"></i>
+          <div class="plan-cost"><span class="plan-price">$99</span><span class="plan-type">/month</span></div>
+        </header>
+        <ul class="plan-features">
+          <li>100GB Linux Web Space
+          </li>
+          <li>Unlimited MySQL Databases
+          </li>
+          <li>Unlimited Email
+          </li>
+          <li>10000Gb mo Transfer
+          </li>
+          <li>24/7 Tech Support
+          </li>
+          <li>Daily Backups
+          </li>
+        </ul>
+        <div class="plan-select"><a href="">Select Plan</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+
+<div class="container-fluid px-3 px-sm-5 my-5 text-center" style="float: left;">
+  <h2 class="mb-5 font-weight-bold"><u> What </u> Our Client Say</h2>
+  <div class="owl-carousel owl-theme">
+      <div class="item first prev">
+          <div class="card border-0 py-3 px-4">
+              <div class="row justify-content-center">
+                  <img src="https://i.imgur.com/gazoShk.jpg" class="img-fluid profile-pic mb-4 mt-3">
+              </div>
+              <h6 class="mb-3 mt-2">Marielle Haag</h6>
+              <p class="content mb-5 mx-2 p-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
+          </div>
+      </div>
+      <div class="item show">
+          <div class="card border-0 py-3 px-4">
+              <div class="row justify-content-center">
+                  <img src="https://i.imgur.com/oW8Wpwi.jpg" class="img-fluid profile-pic mb-4 mt-3">
+              </div>
+              <h6 class="mb-3 mt-2">Ximena Vegara</h6>
+              <p class="content mb-5 mx-2 p-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
+          </div>
+      </div>
+      <div class="item next">
+          <div class="card border-0 py-3 px-4">
+              <div class="row justify-content-center">
+                  <img src="https://i.imgur.com/ndQx2Rg.jpg" class="img-fluid profile-pic mb-4 mt-3">
+              </div>
+              <h6 class="mb-3 mt-2">John Paul</h6>
+              <p class="content mb-5 mx-2 p-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
+          </div>
+      </div>
+      <div class="item last">
+          <div class="card border-0 py-3 px-4">
+              <div class="row justify-content-center">
+                  <img src="https://i.imgur.com/T5aOhwh.jpg" class="img-fluid profile-pic mb-4 mt-3">
+              </div>
+              <h6 class="mb-3 mt-2">William Doe</h6>
+              <p class="content mb-5 mx-2 p-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Footer Sector -->
+<section >
+    <footer class="footer-section" style="top: 30px; background-color: #c9ced375!important;">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="footer-widget">
+                            <div class="footer-social-icon">
+                                <h4 class="footer-widget-heading">Follow us</h4> 
+                                <a href="https://www.linkedin.com/company/dcodax/mycompany/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="    color: #0072b1" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg></a>
+                                <a href="https://twitter.com/dcodax"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="    color: #00acee;" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                  </svg></a>
+                                <a href="https://www.facebook.com/dcodax"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="    color: #3b5998;" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                </svg></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="footer-widget">
+                            <div>
+                                <h4>Useful Links</h4>
+                            </div>
+                            <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="domain.html">Domain</a></li>
+                              <li><a href="services.html">Hosting</a></li>
+                              <li><a href="apps.html">Web & App </a></li>
+                              <li><a href="marketing.html">Digital Marketing</a></li>
+                              <li><a href="seo.html">SEO</a></li>
+                              <li><a href="graphic.html">Graphic Design</a></li>
+                              <li><a href="shopify.html">Shopify</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                      <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                        <h4> About US</h4>
+                        </div>
+                        <h6>Find us</h6>
+                        <a href="https://rb.gy/8l4kma" target="_blank">
+                        <div class="d-flex" style="gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60 " style="margin-top: -15px; color: var(--card3-gradient-color1); " fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg> 2nd Floor, Bismillah Plaza, near MCB Bank, Ghori Town Phase 5 Phase 5 Ghauri Town, Islamabad, Islamabad Capital Territory 44000
+                          </div>
+                        </a>
+                        <h6>Call us</h6>
+                        <a href="tel:+92518441544">
+                        <div class="d-flex" style="gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: var(--card3-gradient-color1); margin-top: 4px;" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg> (051) 8441544 
+                         </div></a>
+                         <h6>Mail us</h6>
+                         <a href="mailto:dcodax786@gmail.com" >
+                         <div class="d-flex" style="gap: 10px;">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: var(--card3-gradient-color1); margin-top: 5px;" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                          </svg> dcodax786@gmail.com
+                          </div>  
+                          </a>        
+                    </div>
+                    </div>
+                    <!-- <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h4>Subscribe</h4>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                  
+                                    <input type="text" placeholder="Email Address"> 
+                                   <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" style="color: var(--card3-gradient-color1); float:right;" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg> </a>
+                                   </form>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<script  src="js/java.js"></script>
+ <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>
